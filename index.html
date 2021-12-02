@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title> Final Review </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="#"> Home </a> </li>
+                    <li> <a href="#"> About </a> </li>
+                    <li> <a href="#"> Blog </a> </li>
+                    <li> <a href="#"> Other Stuff </a> </li>
+                    <li> <a href="#"> Contact </a> </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <main>
+            <!-- 
+                FORMS require 2 attributes:
+                action = WHERE the form information will be submitted to
+                method = HOW that information is submitted
+                    "get" method = unencrypted
+                    "post" method = encrypted 
+            -->
+
+            <form action="index.html" method="post">
+
+                <!-- LABELS require 1 attribute, "for", which needs to match the ID of the form field -->
+                <label for="fullname"> Enter your name: </label>
+                <!-- FORM FIELDS require 2 attributes: ID (to match the label) and name (which is HOW the info is
+                    processed on the server... usually matched with ID)-->
+                <input type="text" id="fullname" name="fullname"> 
+
+                <label for="info"> Enter lots of info: </label>
+                <textarea id="info" name="info"></textarea>
+
+                <div> Radio Buttons: </div>
+                <label for="yes"> Yes </label>
+                <input type="radio" id="yes" name="yesorno">
+                <label for="no"> No </label>
+                <input type="radio" id="no" name="yesorno">
+                <!-- the name is the same for both the yes and no buttons, linking them together!-->
+
+                <!-- there are 2 types of submit buttons:
+                    input type="submit" - use the value attribute to add content (only text content)
+                    button type="submit" - content goes between the tags
+                -->
+                <input type="submit" value="Submit">
+                <button type="submit"> <i class="icon icon-search"> </i> Icon </button> 
+                    
+            </form>
+
+            <article>
+                
+                <h2> HTML Grid </h2>
+                <section> Lorem Ipsum </section>
+                <section> Lorem Ipsum 2 </section>
+
+            </article>
+
+        </main>
+    </div>
+
+</body>
+
+</html>
